@@ -1,0 +1,1 @@
+#aula criada para ensinar como criar um arquivo em .py no vscode
