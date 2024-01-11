@@ -8,11 +8,6 @@ Requisitos:
 '''
 while True:
     result = 0
-    exit_option = input('Deseja sair? Digite [s]: ').lower().startswith("s")
-    print(20 * '-')
-
-    if exit_option is True:
-        break
 
     first_number = input("Insira o primeiro valor: ")
     second_number = input("Insira o segundo valor: ")
@@ -26,6 +21,10 @@ while True:
         second_number = int(second_number)
 
         operator = input("Insira o operador: ")
+
+        if len(operator) > 1:
+            print("Digite apenas um operador.")
+
         if operator == "+":
             result += (first_number+second_number)
         elif operator == "-":
@@ -36,8 +35,14 @@ while True:
             result += (first_number*second_number)
         else:
             print("Operador desconhecido")
-        print(result)
+        print(f'Resultado: {result}')
 
     else:
         print("Digite somente números")
     
+    exit_option = input('Deseja sair? Digite [s]: ').lower().startswith("s")
+    
+    if exit_option is True:
+        break
+    print(20 * '-')
+
