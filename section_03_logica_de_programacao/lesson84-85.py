@@ -12,3 +12,11 @@ print(lista_nome_b)
 
 lista_nome_c = lista_nome.copy()
 print(f'{lista_nome_c=}')
+
+
+# 85. for in com tipo list
+
+lista = ['Maria', 'Helena', 'Fernando']
+
+for nome in lista:
+    print(nome, type(nome))
