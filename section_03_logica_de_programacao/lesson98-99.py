@@ -44,7 +44,6 @@ if resto_divisão > 9:
     print(f'Primeiro dígito do cpf:{resto_divisão}')
     cpf_text += f'-{str(resto_divisão)}'
 else:
-    resto_divisão
     print(f'Primeiro dígito do cpf:{resto_divisão}')
     cpf_text += f'-{str(resto_divisão)}'
 
