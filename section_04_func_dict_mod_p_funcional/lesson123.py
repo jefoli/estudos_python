@@ -64,7 +64,7 @@ tupla = (('Bairro', 'Vila Brasil'), ('número', 50))
 p1.update(tupla)
 print(p1)
 
-#upadte c/ listas
+#update c/ listas
 lista = [['estado civil', 'solteiro'], ['dependente', 'não']]
 p1.update(lista)
 print(p1)
