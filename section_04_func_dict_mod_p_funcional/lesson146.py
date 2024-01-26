@@ -27,7 +27,8 @@ print(generator)
 print(next(generator))
 print(generator.__next__())
 
+
 # getsizeof -> retorna o tamanho da lista em bytes na memória:
 print('Bytes list[]:', sys.getsizeof(lista))
-print('Bytes generator():', sys.getsizeof(generator))
+print('Bytes generator()', sys.getsizeof(generator))
 # por conta disso, podemos ver que a lista consome mais memória que generator, por armazenar todos valores na memória.
