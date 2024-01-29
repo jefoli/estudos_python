@@ -25,6 +25,7 @@ OBS: Tem que tomar cuidado para não colocar nome da var igual do módulo
 para não sobrescrever.
 '''
 from sys import exit, platform
+#platform = 'casa'
 print(platform)
 
 '''
