@@ -1,4 +1,4 @@
-#169. Exercício - Unir listas
+#169-172. Exercício - Unir listas
 '''
 Objetivo = Treinar lógica de programação + conhecer a class zip()
 
