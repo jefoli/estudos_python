@@ -1,18 +1,21 @@
 # 216. Agregação - Python Orientado a Objetos
-'''
+"""
 Agregação é uma forma especializada de associação entre dois objetos.
 
-Cada objeto terá seu ciclo de vida independente.
+É uma associação em que um objeto é proprietário de outros, mas não há dependência forte.
 
-Geralmente é uma relação de UM para MUITOS, onde um objeto tem
-um ou vários objetos.
-Exp: Um veículo pode ter 1 ou várias rodas.
+Cada objeto terá seu ciclo de vida independente, ou seja, os objetos podem 
+existir mesmo que a relação não se estabeleça.
+
+Geralmente é uma relação de UM para MUITOS, onde um objeto tem um ou vários objetos.
+Exemplo 1: Um veículo pode ter 1 ou várias rodas.
+Exemplo 2: A relação entre departamentos e professores em uma universidade.
 
 Os objetos podem viver separadamente, mas pode se tratar de uma relação
 onde um objeto precisa de outro para fazer determinada tarefa.
 
 Obs: Exitem controvérsias sobre definições de agregação.
-'''
+"""
 
 class CarrinhoDecompras:
     def __init__(self):
