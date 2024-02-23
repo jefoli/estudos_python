@@ -1,8 +1,14 @@
 # 229. Classes abstratas - Abstract Base Class (abc) - Python Orientado a Objetos
-'''
+"""
 Classes abstratas - Abstract Base Class (ABC)
 
+As ABCs são classes base abstratas que fornecem uma estrutura para definir interfaces 
+e comportamentos comuns.
+
 ABCs são usadas como contratos para a definição de novas classes.
+
+Elas não podem ser instanciadas diretamente, mas servem como modelos para outras 
+classes.
 
 Elas podem forçar outras classes a criarem métodos concretos.
 
@@ -32,7 +38,7 @@ from abc import ABC, ABCMeta
 2) class Log(metaclass = ABCMeta):
 
 # Documentação: https://docs.python.org/3/library/abc.html
-'''
+"""
 
 from abc import ABC, abstractclassmethod
 
