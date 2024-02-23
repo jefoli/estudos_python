@@ -1,12 +1,18 @@
 # 217. Composição - Python Orientado a Objetos
-'''
+"""
 Composição é uma especialização da agregação.
-Quando o objeto "pai" for apagado, todas as ref. dos objetos
-filhos também serão deletados.
 
-Dica extra: Garbage Collector (GC) em Python é um mecanismo responsável pela gerência automática de memória. 
-Ele aloca memória para objetos e a desaloca quando esses objetos não possuem mais referências.
-'''
+É uma agregação com dependência forte entre os objetos.
+
+Quando o objeto "pai" for apagado, todas as ref. dos objetos filhos também serão 
+deletados.
+
+Exemplo: A relação entre uma universidade e seus departamentos.
+
+Dica extra: Garbage Collector (GC) em Python é um mecanismo responsável pela gerência 
+automática de memória. Ele aloca memória para objetos e a desaloca quando esses 
+objetos não possuem mais referências.
+"""
 
 class Cliente:
     def __init__(self, nome):
