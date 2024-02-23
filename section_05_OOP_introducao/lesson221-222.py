@@ -1,5 +1,5 @@
 # 221-222. super e a sobreposição de membros em Python Orientado a Objetos
-'''
+"""
 Podemos sobrepor o valor de uma classe.
 
 super() - É uma classe, cuja função é retornar temporariamente a superclasse,
@@ -8,8 +8,9 @@ dessa forma, podemos chamar métodos da superclasse.
 B.metodo(self) -> teria mesma função de super, não é recomendável!!!
 
 .mro() - Method resolution order (lista de order)
+"""
 
-'''
+# str -> é uma classe built-in em Python
 class MinhaString(str):
 
     # fizemos a sobreposição do método upper
@@ -24,7 +25,6 @@ class MinhaString(str):
 string = MinhaString('Luiz')
 print(string.upper())
 print()
-########
 
 class A:
     atributo_a = 'valor a'
@@ -69,7 +69,6 @@ class C(B):
 
         print('C')
 
-
 c = C('Atributo A', 'Atributo B')
 print(c.atributo_a)
 print(c.atributo_b)
@@ -77,9 +76,8 @@ print(c.atributo_c)
 
 c.metodo() # Executou o super
 
-# exececuta 
+# executa 
 print(c.atributo)
 print(c.atr_b)
-
 
 print(C.mro()) # Method resolution order
