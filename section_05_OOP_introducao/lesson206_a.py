@@ -1,9 +1,19 @@
 # 206. Exercício - Salve sua classe em JSON
-'''
-Salvar os dados da sua classe em JSON
-e depois criar novamente as instâncias da classe com os dados salvos.
-Salvar em um arquivo separado
-'''
+"""
+Exercício: 
+1) Salvar os dados da sua classe em JSON e depois criar novamente as 
+instâncias da classe com os dados salvos.
+2) Salvar em um arquivo separado.
+
+DICA: Se não colocarmos o vars() na hora que fizer o append no arq. JSON, teremos
+um erro 'TypeError: Object of type Person is not JSON serializable'.
+Isso significa que você está tentando converter um objeto do tipo Person em uma 
+representação JSON, mas o Python não sabe como fazer isso.
+
+Para resolver esse problema, precisamos garantir que o objeto Person seja 
+serializável utilizando vars() ou .__dict__ p/ retornar um dicionário.
+"""
+
 import json
 
 FILE_PATH = 'lesson206.json'
