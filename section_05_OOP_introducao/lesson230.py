@@ -1,5 +1,11 @@
 # 230. abstractmethod para qualquer método já decorado (property e setter)
-'''
+"""
+abstractmethod é um decorador em Python que indica que o método que o segue é abstrato 
+e deve ser implementado pelas classes filhas. 
+
+Quando um método é declarado como abstrato, ele não possui uma implementação 
+concreta na classe atual, mas deve ser definido nas subclasses.
+
 Abstractmethod para qualquer método já decorado
 É possível criar @property @property.setter @classmethod
 @staticmethod e métodos normais como abstratos, para isso use
@@ -11,7 +17,7 @@ palavras que podem mudar na programação (pode ser qualquer coisa)
 @abstractmethod deve vir o mais interno possível
 
 Documentação: https://docs.python.org/3/library/abc.html
-'''
+"""
 
 from abc import ABC, abstractmethod
 
@@ -55,7 +61,6 @@ foo = Foo('Bar')
 print(foo.name)
 
 
-# exp com um setter abstrato
 
 class AbstractFoo(ABC):
 
@@ -67,7 +72,7 @@ class AbstractFoo(ABC):
     @abstractmethod
     def name(self): ...
 
-
+# exp com um setter abstrato
 # @property.setter - classe concreta(vai ser usada) :
 # Para isso, usar o namespace da classe que estamos herdando
 class SetterAbstrato(ABC):
