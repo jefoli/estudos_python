@@ -1,15 +1,13 @@
 # 231-232. Teoria: polimorfismo, assinatura de métodos e Liskov Substitution Principle
-'''
-Polimorfismo é o principío que permite que classes derivadas de uma mesma SUPERCLASSE
+"""
+Polimorfismo é o príncipio que permite que classes derivadas de uma mesma SUPERCLASSE
 tenham métodos iguais (com a mesma assinatura), mas comportamentos diferentes.
 
-Assinatura do método (livros) = mesmo nome e quantidade de parâmetros (retor não faz parte da assinatura)
-
-Opnião professor + principios que contam:
+Assinatura do método (livros) = mesmo nome e quantidade de parâmetros (retorno não faz parte da assinatura)
 
 Assinatura do método (professor) =
     nome do método, 
-    qtd.parâmetros que o método tem,
+    qtd.parâmetros que o método possuí,
     tipos de parâmetros,
     retornos do método.
 
@@ -22,7 +20,8 @@ sem quebrar a aplicação.
 Dicas extras:
     - Sobrecarga de métodos (Python NÃO SUPORTA)
     - Sobreposição/sobrescrever de métodos (Python suporta)
-'''
+    - Type Hint: São um recurso que permite especificar o tipo de dados de uma variável em seu código.
+"""
 
 from abc import ABC, abstractmethod
 
