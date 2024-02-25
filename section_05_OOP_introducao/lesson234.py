@@ -1,4 +1,9 @@
 # 238. Exemplo de uso de dunder methods (métodos mágicos)
+"""
+!r -> é uma formatação especial chamada “repr” é usado dentro de uma f-string 
+(ou format string) para representar o valor do atributo como uma string.
+Ele chama o método __repr__() do objeto para obter a representação textual dele.
+"""
 
 class Ponto:
     def __init__(self, x, y, z='String'):
@@ -17,7 +22,7 @@ class Ponto:
         novo_y = self.y + other.y #(2, 4)
         return Ponto(novo_x, novo_y)
     
-    # >
+    # > (maior que)
     def __gt__(self, other):
         resultado_self = self.x + self.x
         resultado_other = other.y + other.y

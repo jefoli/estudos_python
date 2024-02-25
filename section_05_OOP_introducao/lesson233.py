@@ -1,25 +1,28 @@
 # 236-237. Teoria: python Special Methods, Magic Methods ou Dunder Methods
+"""
+Dunder = Double Underscore = __dunder__
+Antigo e útil: https://rszalski.github.io/magicmethods/
+https://docs.python.org/3/reference/datamodel.htmlpecialnames
+__init__(self, other) 
+__lt__(self,other) - self < other
+__le__(self,other) - self <= other
+__gt__(self,other) - self > other (O método __gt__ é uma implementação do operador maior que (>))
+__ge__(self,other) - self >= other
+__eq__(self,other) - self == other
+__ne__(self,other) - self != other
+__add__(self,other) - self + other
+__sub__(self,other) - self - other
+__mul__(self,other) - self * other
+__truediv__(self,other) - self / other
+__neg__(self) - -self
+__str__(self) - str
+__repr__(self) - str (representação do objeto)
 
-# Teoria: python Special Methods, Magic Methods ou Dunder Methods
-# Dunder = Double Underscore = __dunder__
-# Antigo e útil: https://rszalski.github.io/magicmethods/
-# https://docs.python.org/3/reference/datamodel.html#specialnames
-# __init__(self, other) 
-# __lt__(self,other) - self < other
-# __le__(self,other) - self <= other
-# __gt__(self,other) - self > other
-# __ge__(self,other) - self >= other
-# __eq__(self,other) - self == other
-# __ne__(self,other) - self != other
-# __add__(self,other) - self + other
-# __sub__(self,other) - self - other
-# __mul__(self,other) - self * other
-# __truediv__(self,other) - self / other
-# __neg__(self) - -self
-# __str__(self) - str
-# __repr__(self) - str (representação do objeto)
-# Dica1: __repr__ - + voltado para devs (comunicação de como o objeto seja criado/montado) para saber a parte de desenvolvimento do objeto
-# Dica2: __str__ - representação de uma string do objeto
+Dica1: __repr__ -> + voltado para devs (comunicação de como o objeto seja criado/montado) 
+para saber a parte de desenvolvimento do objeto
+
+Dica2: __str__ -> representação de uma string do objeto
+"""
 
 class Ponto:
     def __init__(self, x, y, z='String'):

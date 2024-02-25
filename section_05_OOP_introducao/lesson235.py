@@ -1,12 +1,11 @@
 # 239. __new__ e __init__ em classes Python
-'''
-
+"""
 __new__ -> Método responsável por CRIAR e retornar um novo objeto.
 Por isso, recebe cls.
 
 __new__ -> DEVE retornar um novo objeto
 
-Obs: O __new__ é chamado antes do __init__, dado o fato de ser o resp. por criar a instância.45
+Obs: O __new__ é chamado antes do __init__, dado o fato de ser o resp. por criar a instância
 
 (mais utilizado) __init__ -> é o método responsável por INICIALIZAR a instância.
 Por isso recebe, self.
@@ -15,8 +14,8 @@ __init__ -> NÃO DEVE retornar nada (None)!
 
 lembre-se: object é a super classe de uma classe
 
-Extra: new e init são similares a contrutores (método que cria um objeto) em outras linguagens.
-'''
+Extra: new e init são similares a construtores (método que cria um objeto) em outras linguagens.
+"""
 
 class A:
 
