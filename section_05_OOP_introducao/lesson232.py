@@ -2,7 +2,7 @@
 # 234. Levantando e tratando suas Exceptions (Exceções)
 # 235. Notas das exceptions em Python 3.11+ (add_notes, __notes__)
 
-'''
+"""
 Para criar uma Exception em Python, basta herdar de alguma exceção da linguagem.
 
 Recomendação: herdar de Exception
@@ -16,10 +16,11 @@ Por convenção, é necessário colocar a palavra 'Error' ao final.
 
 conforme documentação, temos que herdar de Exception
 
-. add_note() -> Podemos lançar uma nota de erro a partir do Python 3.11
+.add_note() -> Podemos lançar uma nota de erro a partir do Python 3.11
 
-'''
 
+"""
+#Exception é uma func. built-in.
 class MyError(Exception):
     ...
 
@@ -39,6 +40,7 @@ try:
     # 1/0
     levantar()
 
+# ZeroDivisionError é uma func. built-in.
 except (MyError, ZeroDivisionError) as error:
     print(error.__class__.__name__)
     print(error)
