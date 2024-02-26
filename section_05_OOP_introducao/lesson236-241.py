@@ -2,14 +2,22 @@
 # Exceptions em context manager com classes
 
 '''
-Você pode implementar seus próprios protocolos apenas
-implementando os dunder methods o que o Python vai usar.
+Um context manager em Python é um objeto que controla o ambiente visto em uma declaração WITH, 
+definindo os métodos __enter__() e __exit__().
 
-Isso é chamado de "duck typing". 
-Um conceito relacionado com tipagem dinâmica onde o Python não está interessado
+Um context manager é responsável por configurar um recurso para ser usado em uma 
+parte específica do código e, em seguida, limpá-lo ou liberá-lo após a execução desse código.
+
+Exp: O exemplo clássico de um context manager é o gerenciamento de arquivos.
+
+Você pode implementar seus próprios protocolos apenas implementando os dunder methods o que o Python vai usar.
+
+"duck typing": Um conceito relacionado com tipagem dinâmica onde o Python não está interessado
 no tipo(int, str, class...), mas se alguns métodos existem no seu objeto para que ele funcione de forma adequada.
 
-Para criar um context manager, os métos __enter__ e __exit__ devem ser implementados.
+Para criar um context manager, os métodos devem ser implementados:
+    __enter__ 
+    __exit__ 
 
 O método __exit__ receberá a classe de exceção, a exceção e o traceback.
 Se retornar True, exceção no with será suprimida.
@@ -50,6 +58,7 @@ class MyContextManager:
         #remontar (é possível, mas não faz sentido):
         #raise class_exception(*exception_.args).with_traceback(traceback_)
         
+        # podemos adicionar notas no context manager:
         # exception_.add_note('Minha nota')
         
         return True # True significa (tratei a exceção)
