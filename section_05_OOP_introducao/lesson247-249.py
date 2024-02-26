@@ -29,11 +29,11 @@ Métodos importantes da metaclass:
 __new__(mcs, name, bases, dct) - cria a classe
 # bases = heranças em ordem 
 
-__cal__ (cls, *args, *kwargs) - cria e inicializa a instância
+__call__ (cls, *args, *kwargs) - cria e inicializa a instância
 
 OBS: Em Python podemos manipular a criação da class em (__new__), instância da metaclass (__call__)
 
-"Metaclasses são magias mais profundas do que 99% dos usuários deveriam se preocupar. Se você quer saber se precisa delas, 
+"Metaclasses são magias mais profundas do que 99% dos usuários NÃO deveriam se preocupar. Se você quer saber se precisa delas, 
 não precisa (as pessoas que realmente precisam delas sabem com certeza que precisam delas e não precisam de uma explicação sobre o porquê)."
 — Tim Peters (CPython Core Developer)
 """
@@ -57,8 +57,7 @@ e = ExpType()
 print(type(ExpType))
 
 
-# Exp p/ criar uma metaclass(cria a class)
-
+# Exp p/ criar uma metaclass (criar a class)
 def meu_repr(self):
     return f'{type(self).__name__}({self.__dict__})'
 

@@ -13,7 +13,7 @@ class Multiplicar:
         self.func = func
         self._multiplicador = 10
 
-
+    # __call__ está fazendo que a instância seja tratada como uma função.
     def __call__(self, *args: Any, **kwargs: Any) -> Any:
         print(args, kwargs)
         resultado = self.func(*args, **kwargs)
@@ -23,10 +23,8 @@ class Multiplicar:
 def soma(x, y):
     return x * y
 
-
 dois_mais_dois = soma(2, 2) #  args e kwargs recebem os argumentos passados p/ func soma
 print(dois_mais_dois)
-
 
 
 class Dividir:

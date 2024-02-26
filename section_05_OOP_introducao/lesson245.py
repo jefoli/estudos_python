@@ -1,14 +1,16 @@
 # 245. Método especial __call__
 """
-método especial ___call__
-callable é algo que pode ser executado com parênteses
+método especial __call__
+
+O método permite que uma instância de uma classe seja tratada e executada 
+como uma função, aprimorando a versatilidade da programação orientada a objetos.
+
+Callable é algo que pode ser executado com parênteses
+
 Em classes normais, __call__ faz a instância de uma classe 'callable'.
 
 Ele faz a instância/objeto da classe ser executável.
 """
-
-from typing import Any
-
 
 class CallMe:
     def __init__(self, phone):
