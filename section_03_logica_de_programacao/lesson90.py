@@ -1,22 +1,26 @@
 # 90. Exercício - crie uma lista de compras com listas
+"""
+1) Faça uma lista de compras com listas
 
-'''
-Faça uma lista de compras com listas
-
-O usuário deve ter a possibilidade de inserir, apagar e listar valores de sua lista
+Observações: 
+O usuário deve ter a possibilidade de:
+    inserir, 
+    apagar e listar 
+    valores de sua lista.
 
 Não permita que o programa quebre com erros de índices inexistentes na lista.
-'''
+"""
 import os
 
 lista_de_compras = []
 
 while True:
 
-    menu = input(f'Escola uma opção: \n[1] Inserir item \n[2] Listar item \n[3] apagar item \n[4] Sair \n:')
+    menu = input(f'Escola uma opção: \n[1] Inserir item \n[2] Listar item'\
+                f'\n[3] apagar item \n[4] Sair \n -> ')
 
     if menu == '1':
-        os.system('cls')
+        os.system('cls') # 'cls' p/ windows | 'clear' p/ linux
         add_item = input('Insira o item que deseja comprar: ')
 
         if len(add_item) == 0:

@@ -1,10 +1,8 @@
 # 97. Operação ternária com Python (if e else de uma linha)
-'''
-Operação ternária (conndicional de uma linha)
-
+"""
+Operação ternária (condicional de uma linha)
 <valor> if <condição> else <outro_valor>
-
-'''
+"""
 condicao = 10 == 10
 variavel = 'Valor' if condicao else 'Outro valor'
 print(variavel)

@@ -1,6 +1,8 @@
 # 87. Introdução ao empacotamento e desempacotamento
-
-# _ (CONVENÇÃO) quando não vamos utilizar os demais valores de uma lista, utilizamos o underline / indica que a var está ali, mas não vamos usar ela.
+"""
+OBS(1): _ (CONVENÇÃO) quando não vamos mais utilizar um valor de uma lista, 
+inserimos _ (underline) para indicar que há uma var naquele local, porém não será utilizada.
+"""
 
 nomes = ['Maria', 'Helena', 'Fernando'] # desempacotar - extrair os valores e inserir em variaveis
 nome1, nome2, nome3 = nomes
@@ -13,13 +15,12 @@ print(nome2)
 # Para evitarmos isso, é necessário desempacotar, extrair o valor que deseja, e empacotar novamente! 
 
 # Para evitarmos o erro, o correto é criarmos uma var e utilizar (*) asterisco.
-
 name1, *rest = ['Camões', 'Machado', 'Quincas']
 print(name1)
 print(rest) # lista com o restante dos valores!
 
 
-# _ (CONVENÇÃO) quando não vamos utilizar os demais valores de uma lista, utilizamos o underline
+# OBS(1)
 name1, *_ = ['Camões', 'Machado', 'Quincas']
 print(name1)
 

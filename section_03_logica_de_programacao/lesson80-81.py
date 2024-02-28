@@ -1,6 +1,6 @@
 # 80-81. Tipo list - Introdução às listas mutáveis em Python
 # 81. Alterando uma lista com índices, del, append e pop (Tipo list)
-'''
+"""
 Tipo list - É Mútavel
 
 Suporta vários valores de qualquer tipo.
@@ -14,12 +14,19 @@ Metódos úteis:
     - del - Deleta um índice
     - clear
     - extend
+        Obs_3: o método extend é usado para adicionar elementos de uma estrutura 
+        iterável (como uma lista, tupla ou dict(insere a chave do dict)) ao final de outra lista.
     - CRUD (Create, Read, Update, Delete) = list[i]
 
-Obs_2: Quando deletarmos algum valor da lista, automaticamente será reorganizado os índices.
+Obs_4: Quando deletarmos algum valor da lista, automaticamente será reorganizado os índices.
 
-Obs_3: Em listas muitos grandes, merece maior atenção por conta da alteração dos índices em caso de CRUD.
-'''
+Obs_5: Em listas muitos grandes, merece maior atenção por conta da alteração dos índices em caso de CRUD.
+
+append vs extend:
+O método append adiciona um único elemento ao final da lista.
+O método extend é mais poderoso e pode adicionar múltiplos elementos de uma vez.
+
+"""
 
 string = 'ABCD'
 

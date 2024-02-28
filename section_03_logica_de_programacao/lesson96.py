@@ -1,24 +1,20 @@
 # 96. Desempacotamento em chamadas de funções
-
 string = 'ABCD'
 
-lista = ['Maria', 'Helena', 1,2,3, 'Eduarda']
+lista_sortida = ['Maria', 'Helena', 1,2,3, 'Eduarda']
 
 tupla = 'Python', 'é', 'legal'
 
-# ap -> pega o antepenúltimo
-# u -> pega o último valor
+primeiro_valor, segundo_valor, *_, penultimo_valor, ultimo_valor = lista_sortida
 
-a, b, *_, ap, u = lista
+print(primeiro_valor, ultimo_valor, penultimo_valor) 
 
-print(a, u, ap) 
-
-# desempacotar a lista c/ (*):
-print(*lista)
+# desempacotar a lista_sortida c/ (*):
+print(*lista_sortida)
 print(*string, sep='-')
 
 # desempacotamos e deixamos todos valores na mesma linha:
-for nome in lista:
+for nome in lista_sortida:
     print(nome, end=' ')
 
 

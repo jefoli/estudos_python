@@ -1,20 +1,19 @@
 # 93. (split, join e strip) - métodos muito úteis da str
-''' 
+""" 
 split - tem a função de dividir uma string
     - .split() -> Vázio - separa as palavras nos espaços em branco!
     - Podemos passar parâmetros dentro do split.
 
-strip - tem a função de cortar os espaços do começo e do fim da string
-rstrip - tem a função de cortar os espaços da direita
-lstrip - tem a função de cortar os espaços da esquerda
+var.strip() - tem a função de cortar os espaços do começo e do fim da string
+var.rstrip() - tem a função de cortar os espaços da direita
+var.lstrip() - tem a função de cortar os espaços da esquerda
 
 join - tem a função de unir uma string
     - primeiro tem que criar uma string vazia (var = '') onde '' é utilizado para separação dos itens do iterável. 
     - Em seguida, chama .join() e passa o parâmetro dentro.
 
 Obs: Utilizando expressões regulares (Regex) ou list comprehension, a separação fica refinada.
-
-'''
+"""
 
 frase = 'Olha só que    , coisa interessante     '
 lista_palavras = frase.split(',')

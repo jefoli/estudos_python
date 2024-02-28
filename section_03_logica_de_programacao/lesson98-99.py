@@ -2,7 +2,8 @@
 """
 Calculo do primeiro dígito do CPF: 746.824.890-70
 
-Colete a soma dos 9 primeiros dígitos do CPF multiplicando cada um dos valores por uma contagem regressiva começando de 10
+Colete a soma dos 9 primeiros dígitos do CPF multiplicando cada um dos valores 
+por uma contagem regressiva começando de 10.
 
 Ex.:  746.824.890-70 (746824890)
     10  9  8  7  6  5  4  3  2
@@ -19,18 +20,17 @@ Se o resultado anterior for maior que 9:
 contrário disso:
     resultado é o valor da conta
 
-O primeiro dígito do CPF é 7
+Dica: O primeiro dígito do CPF é 7
 """
 
 # Minha resposta:
-
-cpf_text = '746.824.890'
-cpf_limpo = cpf_text.replace('.','')
+cpf_cliente = '746.824.890'
+cpf_limpo = cpf_cliente.replace('.','')
 
 acumulador = 0
 contador = 10
 
-for i, digito in enumerate(cpf_limpo):
+for _, digito in enumerate(cpf_limpo):
     acumulador += contador * int(digito)
     contador -= 1
 
@@ -42,12 +42,12 @@ if resto_divisão > 9:
     
     resto_divisão = 0
     print(f'Primeiro dígito do cpf:{resto_divisão}')
-    cpf_text += f'-{str(resto_divisão)}'
+    cpf_cliente += f'-{str(resto_divisão)}'
 else:
     print(f'Primeiro dígito do cpf:{resto_divisão}')
-    cpf_text += f'-{str(resto_divisão)}'
+    cpf_cliente += f'-{str(resto_divisão)}'
 
-print(cpf_text)
+print(cpf_cliente)
 
 
 '''

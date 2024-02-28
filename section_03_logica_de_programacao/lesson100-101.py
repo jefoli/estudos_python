@@ -1,7 +1,8 @@
 # 100-101. Gerar o segundo dígito de um CPF com Python
 """
 Calculo do segundo dígito do CPF: 746.824.890-70
-Colete a soma dos 9 primeiros dígitos do CPF, MAIS O PRIMEIRO DIGITO, multiplicando cada um dos valores por uma contagem regressiva começando de 11.
+Colete a soma dos 9 primeiros dígitos do CPF, MAIS O PRIMEIRO DIGITO, multiplicando 
+cada um dos valores por uma contagem regressiva começando de 11.
 
 Ex.:  746.824.890-70 (7468248907)
     11 10  9  8  7  6  5  4  3  2
@@ -18,7 +19,7 @@ Se o resultado anterior for maior que 9:
 contrário disso:
     resultado é o valor da conta
 
-R: O segundo dígito do CPF é 0
+Dica: O segundo dígito do CPF é 0
 """
 
 cpf = '746.824.890-7'
@@ -27,7 +28,7 @@ cpf_limpo = cpf.replace('.','').replace('-','')
 acumulador = 0
 contador = 11
 
-for i, digito in enumerate(cpf_limpo):
+for _, digito in enumerate(cpf_limpo):
     acumulador += contador * int(digito)
     contador -= 1
 
