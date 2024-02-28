@@ -14,9 +14,11 @@ cpf_usuario = input('Digite seu CPF: ')
 cpf_usuario_tratado = re.sub(r'[^0-9]','', cpf_usuario)
 #print(limpar_cpf)
 
+#checa qtd. chars de entrada:
 entrada_qtd_char = False if len(cpf_usuario_tratado) == 11 else True
 
-entrada_valor_seq = cpf_usuario == cpf_usuario[0] * len(cpf_usuario)
+#checa se há char repetidos:
+entrada_valor_seq = cpf_usuario == (cpf_usuario[0] * len(cpf_usuario))
 
 print(entrada_qtd_char, entrada_valor_seq)
 if entrada_qtd_char or entrada_valor_seq:
