@@ -1,10 +1,17 @@
 # 152. raise - lançando exceções (erros)
-'''
+"""
+A instrução raise é usada para lançar (ou gerar) uma exceção deliberadamente em 
+um ponto específico do código.
+
 Erro é utilizado quando não temos o que fazer algo.
 
 podemos criar um erro com -> raise (tem a função de relançar a exceção)
 
-'''
+Diferença entre try-except e raise:
+- O raise é usado para criar e lançar exceções explicitamente.
+- O try-except é usado para capturar e tratar exceções que podem ocorrer durante 
+a execução do código.
+"""
 
 print(123)
 #raise ValueError('Deu erro!') #Lançamos um erro no código!
@@ -12,12 +19,11 @@ print(123)
 
 
 # Cria nosso próprio erro(alteraos mensagem de retorno):
-def divide(n, d):
+def dividir(n, d):
     if d == 0:
         raise ZeroDivisionError('Você está tentando dividir por 0')
     return n / d
-#print(divide(8, 0))
-
+#print(dividir(8, 0))
 
 def nao_aceita_zero(d):
     if d == 0:

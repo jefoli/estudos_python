@@ -1,6 +1,6 @@
 # 126-127. Introdução ao tipo set em Python (conjuntos)
-'''
-Sets conjuntos em python (tipo set)
+"""
+Sets em Python não possuem índices. Um set é uma coleção desordenada de elementos únicos. 
 
 Sets são mutáveis, porém aceitam apenas tipos imutáveis como valor interno.
 
@@ -16,7 +16,7 @@ Dicas:
     - Não possuem índex, logo não podemos acessar um valor pelo index
     - Não garantem a ordem das informações.
     - São iteráveis (for, in, not in)
-'''
+"""
 
 #formas de criar sets
 

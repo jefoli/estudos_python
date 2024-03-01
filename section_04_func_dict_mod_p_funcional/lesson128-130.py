@@ -1,7 +1,8 @@
 # 128-130. Métodos úteis do tipo set em Python (conjuntos)
-'''
-Sets conjuntos em python (tipo set)
-Sets são mutáveis, porém aceitam apenas tipos imutáveis como valor interno.
+"""
+- Em Python, um set é uma coleção desordenada de elementos únicos.
+- Sets não possuem  índices.
+- Pode ser utilizado para conjuntos numéricos.
 
 formas de cria um set:
     1) set():
@@ -19,16 +20,16 @@ Dicas:
 Métodos úteis (mais utilizados):
     - add
     - update
-    - discard (passar o valor p/ excluir, pois não há índice)
+    - remove (passar o valor p/ excluir, pois não há índice)
     - clear
-
 
 Operadores úteis:
     | -> união | união (union) - Faz a união
     & -> intersecção & (intersection) - Itens presentes em ambos
     - -> diferença - Itens apenas no set da esqueda
     ^ -> diferença simétrica - Itens que não estão em ambos
-'''
+"""
+
 # add
 s1 = set()
 s1.add('Magnólia')
@@ -42,7 +43,7 @@ s2.update('Hi') # ele itera a string
 s2.update(('Olá mundo', 2)) # tupla evita iteração do str
 print(s2)
 
-# discard
+# remove
 s2.remove('Magnólia')
 print(s2)
 
@@ -55,19 +56,19 @@ conjunto_2 = {2,3,4}
 
 # union:
 unir_sets = conjunto_1 | conjunto_2
-print(unir_sets)
+print('União:', unir_sets)
 
 # intersecção:
 interseccao_sets = conjunto_1 & conjunto_2
-print(interseccao_sets)
+print('Intersecção:', interseccao_sets)
 
 # diferença (Apenas itens presentes no set da esquerda):
 diferenca_sets = conjunto_1 - conjunto_2
-print(diferenca_sets)
+print('Diferença:', diferenca_sets)
 
 # diferença simétrica (itens NÃO estão presentes em ambos):
 diferenca_simetrica_sets = conjunto_1 ^ conjunto_2
-print(diferenca_simetrica_sets)
+print('Diferença Simétrica:', diferenca_simetrica_sets)
 
 
 # Exemplo de uso dos sets (procurar valor dentro dele):

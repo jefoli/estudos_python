@@ -1,6 +1,6 @@
 # 136-138. List comprehension em Python (mapeamento, filter)
-'''
-list comprehensions é uma forma rápida paracriar lista a partir de iteráveis!
+"""
+list comprehensions é uma forma rápida para criar lista a partir de iteráveis!
 
 mapeamento - Gerar uma nova lista de uma lista existente, podendos transformar seus dados
 e manter o mesmo tamanho/índice das listas 
@@ -12,8 +12,7 @@ OBS: exemplos abaixos possuem if antes e depois do for, o que significa que
 if antes do for = ternário e após o for = filtro (não recebe else)    
 
 vídeo complementar: https://www.youtube.com/watch?v=1YbTDczvqco
-
-'''
+"""
 # estilizar visualização da saída dos dados:
 import pprint
 def imprimir(imprimir):
@@ -25,7 +24,6 @@ lista = []
 for numero in range(10):
     lista.append(numero)
 print(lista)
-
 
 # criar lista com list comprehension:
 # Precisa colocar a esquerda do for o que será incluído
